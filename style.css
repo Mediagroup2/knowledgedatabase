@@ -1,0 +1,165 @@
+*{
+background-color:#3d8af7;
+font-family:Arial;
+margin:;
+padding:0;
+}
+
+.container {
+    height:695px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.logo{
+float:left;
+margin-left:440px;
+margin-top:-202px;
+border-style:solid;
+border-color:red;
+border-width:10px;
+	box-shadow:3px 3px 12px #4a4a4a;
+}
+
+#mainNav{
+margin-top:00px;
+float:left;
+width:250px;
+Display:inline-block;
+/*
+    margin-left:-32px;
+    margin-right:-40px
+*/
+}
+
+nav ul{
+    width: 95%;
+    height: 10%;
+}
+
+nav li{
+    background-image:url(img/oranje.jpg);
+    padding-right:10px;
+    padding:10px;
+    padding-bottom:0px;
+	left:60px;
+	height:56px;
+	width:97%;
+	box-shadow:1px 1px 12px #4a4a4a;
+    border-color:red;
+	font-size:30px;
+    text-align:center;
+    list-style-type: ;
+    border-style:solid;
+    border-width:1px;
+    display:inline;
+    float:left;
+    text-align:center;
+
+    
+}
+
+
+li{ 
+	cursor: pointer; cursor: hand; 
+    color: white;
+    float:;
+    text-shadow: 1px 1px 1px black;
+    text-decoration:none;
+    background-color:#ffa834;
+    border-color:#57443d;
+/*    overflow:auto;*/
+
+
+
+}
+
+.scroll{
+    overflow:auto;
+}
+button{
+	margin-top: 420px;
+    margin-left: 545px;
+    background-image: url(img/download.jpg);
+	box-shadow:1px 1px 8px #4a4a4a;
+	height:46px;
+	width:180px;
+    color: white;
+	font-size: 25px;
+	border-radius: 20px;
+}
+
+button:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+	
+}
+li:hover{
+	
+    background:#ffa834;
+    font-size:40px;
+	border: 1px solid #000000;
+background: #333333 url(img/blue.jpg);
+color: #ffffff;
+}
+    
+    
+}
+
+.CSS{
+  
+  float:left;
+  width:10;
+    
+}
+
+.footer{
+	margin-top:10px;
+    margin-left:-81px;
+	background: red;
+	width: 1443px;
+	height: 50px;
+	
+}
+    
+    
+    #slideshow {
+    position:relative;
+    height:133px;
+    width: 100px;
+	
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        margin-top:50px;
+        left:0;
+        z-index:8;
+        height: 133px;
+        width: 100px;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+.rss {
+margin-left: 1000px;
+margin-top: 0px;
+float:right;
+	
+}
+ 
+
+
+
+
+
+
+
+
+
