@@ -35,3 +35,6 @@ include 'connect.inc.php';
                    <TD><INPUT type="text" SIZE="30"><BR></TD>
                    <button>Toevoegen</button> <button>Annuleren</button>
                </tr>
+                 <?php
+                 $query = mysqli_query($con, 'SELECT * FROM tutorials');
+                 ?>

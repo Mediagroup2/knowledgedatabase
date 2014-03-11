@@ -35,3 +35,14 @@ include 'connect.inc.php';
                    <TD><INPUT type="text" SIZE="30"><BR></TD>
                    <button>Toevoegen</button> <button>Annuleren</button>
                </tr>
+                 <?php
+                 $query = mysqli_query($con, 'SELECT * FROM videos');
+                while ($queryFetch = mysql_fetch_array($querySelect)); {
+ echo "<tr><td>".$queryFetch['titel']."</td>";
+ echo "<td>".$queryFetch['tags']."</td>";
+    echo "<td>".$queryFetch['categorie']."</td>";
+    echo "<td>".$queryFetch['url']."</td>";
+    echo "<td>".$queryFetch['beschrijving']."</td>";
+    echo "<td>".$queryFetch['toegevoegd_op']."</td>";
+                }
+                 ?>
