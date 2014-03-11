@@ -1,17 +1,10 @@
-<?php  // dit opent onze php script, net als we onze html openen met <html>
+<?php
+$con = mysqli_connect('localhost','root', '','media_group2');// Je maakt connectie met database doormiddel van je gegevens van je database hier in te zetten.
 
-
-// hieronder staan de variabelen die we alvast aanmaken. deze variabelen bevatten jouw gegevens voor de connectie met mySql
-
-	$host = 'localhost' ;
-	$username = 'root' ;
-	$pass = 'root' ;
-	$db = 'cv' ;
-
-// roept de connect functie aan van php en hierin voeren we de gemaakte variablen in.
-// vervolgens stoppen we deze connectie zelf ook nog eens in een variabele ($con).
-
-
+if (mysqli_connect_error()) { 
+    echo "kan geen connectie maken met database"; 
+    exit();//Als je geen connectie krijgt kan jij er een error aan geven.
+}
 
 
 ?>
