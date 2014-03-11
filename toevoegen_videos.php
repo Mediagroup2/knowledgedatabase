@@ -8,41 +8,31 @@ include 'connect.inc.php';
 </head>
 <body>
     <div class="container">
-  <tr>
-                   <th>Titel</th><br>
-                   <TR>
-
-<TD><INPUT type="text" SIZE="30"><BR></TD>
-</TR>
-                   <th>Tags</th><br>
-        <TD><INPUT type="text" SIZE="30"><BR></TD>
-                       
-<Th>Categorie</Th><TD>
-<form>
+    <form action="add_videos.php" method="post">
+     <input type="text" name="titel" placeholder="insert titel"><br>
+           <input type="text" name="tags" placeholder="insert tags"><br>
 <input type="radio" name="verzekering" value="html">html
 <input type="radio" name="verzekering" value="css">css 
 <input type="radio" name="verzekering" value="php">php
 <input type="radio" name="verzekering" value="jquery">jquery
 <input type="radio" name="verzekering" value="psd">psd
-</form>
-</TD>
-</TR>
-                       <th>Url</th><br>
-                       <TD><INPUT type="text" SIZE="30"><BR></TD>
-                   <th>Beschrijving</th><br>
-                   <TD><INPUT type="text" SIZE="50"><BR></TD>
-                   <th>Datum</th><br>
-                   <TD><INPUT type="text" SIZE="30"><BR></TD>
-                   <button>Toevoegen</button> <button>Annuleren</button>
+                           <input type="text" name="url" placeholder="url"><br>
+                        <input type="text" name="beschrijving" placeholder="insert beschrijving"><br>
+                       <input type="date" name="datum" placeholder="datum"><br>
+                     <input type="submit" value="Toevoegen">
+                     <input type="submit" value="Annuleren">
+                     </form>
                </tr>
+                 </div>
+                 </html>
                  <?php
-                 $query = mysqli_query($con, 'SELECT * FROM videos');
-                while ($queryFetch = mysql_fetch_array($querySelect)); {
+                $querySelect = mysql_query("SELECT * FROM videos");
+$queryFetch = ($querySelect);
  echo "<tr><td>".$queryFetch['titel']."</td>";
  echo "<td>".$queryFetch['tags']."</td>";
     echo "<td>".$queryFetch['categorie']."</td>";
     echo "<td>".$queryFetch['url']."</td>";
     echo "<td>".$queryFetch['beschrijving']."</td>";
     echo "<td>".$queryFetch['toegevoegd_op']."</td>";
-                }
+                
                  ?>
