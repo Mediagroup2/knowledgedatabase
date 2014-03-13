@@ -1,13 +1,18 @@
- $(document).ready(function(e) {
+$(document).ready(function(e) {
     //menubar//
+//   $('#mainnav nav ul li').hide(function();{
+//        $(this).children('nav').hide(100).after(){
+       
+    
     $('#mainNav nav ul li').mouseenter(function(){
         
-        $(this).children('ul').stop(450).slideDown(100);
+        
+        $(this).children('ul').stop(450).slideDown(50);
     });
     
     $('#mainNav nav ul li').mouseleave(function(){
         
-        $(this).children('ul').stop(450).slideUp(100);
+        $(this).children('ul').stop(450).slideUp(300);
     });
     
     $('#mainNav nav ul li > ul li ul').parent('li').children('a').css({background: '#f00'});
@@ -15,7 +20,7 @@
 //einde menubar//
 });
 
- //Voeg toe button//
+//Voeg toe button//
 $(function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
@@ -103,13 +108,13 @@ $(function() {
     $( "#dialog4" ).dialog( "open" );
     
     $("#dialog").hide('completer hide');
-        if ("#dailog2").hide 
-        var next= 
+       
     });
   });
 
 
 
+//Einde voeg toe button//
 function slideSwitch() {  //Functie is slideshow
     var active = $('#slideshow IMG.active');  //Eerste foto word actief
     if ( active.length == 0 ) active = $('#slideshow IMG:last');  //Nadat de eerste foto actief is geweest krijg hij last mee van last active
