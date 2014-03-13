@@ -18,23 +18,22 @@ margin-top:-202px;
 border-style:solid;
 border-color:red;
 border-width:10px;
-	box-shadow:3px 3px 12px #4a4a4a;
+box-shadow:3px 3px 12px #4a4a4a;
 }
 
 #mainNav{
-margin-top:00px;
+margin-top:-13px;
 float:left;
 width:250px;
-Display:inline-block;
-/*
-    margin-left:-32px;
-    margin-right:-40px
-*/
+Display:inline;
+
 }
 
 nav ul{
     width: 95%;
     height: 10%;
+
+    
 }
 
 nav li{
@@ -43,7 +42,7 @@ nav li{
     padding:10px;
     padding-bottom:0px;
 	left:60px;
-	height:56px;
+	height:76px;
 	width:97%;
 	box-shadow:1px 1px 12px #4a4a4a;
     border-color:red;
@@ -55,6 +54,8 @@ nav li{
     display:inline;
     float:left;
     text-align:center;
+    
+    
 
     
 }
@@ -68,6 +69,9 @@ li{
     text-decoration:none;
     background-color:#ffa834;
     border-color:#57443d;
+    
+    
+   
 /*    overflow:auto;*/
 
 
@@ -77,8 +81,9 @@ li{
 .scroll{
     overflow:auto;
 }
+/*
 button{
-	margin-top: 420px;
+	margin-top: 322px;
     margin-left: 545px;
     background-image: url(img/download.jpg);
 	box-shadow:1px 1px 8px #4a4a4a;
@@ -88,6 +93,7 @@ button{
 	font-size: 25px;
 	border-radius: 20px;
 }
+*/
 
 button:hover{
     background:red;
@@ -114,13 +120,14 @@ color: #ffffff;
     
 }
 
-.footer{
-	margin-top:10px;
+#footer{
+	margin-top:13px;
     margin-left:-81px;
 	background: red;
 	width: 1443px;
 	height: 50px;
-	
+    color:white;
+    font-size:19px;
 }
     
     
@@ -153,6 +160,88 @@ margin-top: 0px;
 float:right;
 	
 }
+
+#dialog{
+/*     float:right;*/
+     height:100px;
+     background-color: lightgrey;
+     border:solid;
+     border-width:10px;
+     border-color:black;
+     padding:50px;
+     text-align:center;
+     color:white;
+}
+#toevoeg{
+    float:left;
+    width:50px;
+    height:50px;
+}
+
+#opener{
+    margin-top: 282px;
+    margin-left: 545px;
+    background-image: url(img/download.jpg);
+	box-shadow:1px 1px 8px #4a4a4a;
+	height:46px;
+	width:180px;
+    color: white;
+	font-size: 25px;
+	border-radius: 20px;
+}
+
+#opener:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
+
+#toevoeg{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
+
+#toevoeg:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
+
+#toevoeg1{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
+
+#toevoeg1:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
+
+#toevoeg2{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
+
+#toevoeg2:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
+  
+    
  
 
 

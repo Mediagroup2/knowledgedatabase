@@ -15,12 +15,14 @@
 //einde menubar//
 });
 
-  $(function() {
-    $( "button" ).dialog({
+ //Voeg toe button//
+$(function() {
+    $( "#dialog" ).dialog({
       autoOpen: false,
       show: {
-      effect: "blind",
+      effect: "explode",
       duration: 1000
+          
       },
       hide: {
       effect: "explode",
@@ -29,7 +31,80 @@
     });
  
     $( "#opener" ).click(function() {
-      $( "button" ).dialog( "open" );
+    $( "#dialog" ).dialog( "open" );
+    });
+  });
+//Einde voeg toe button//
+
+
+//Voeg toe button//
+$(function() {
+    $( "#dialog2" ).dialog({
+      autoOpen: false,
+      show: {
+      effect: "explode",
+      duration: 1000
+          
+      },
+      hide: {
+      effect: "explode",
+      duration: 1000
+      }
+    });
+ 
+    $( "#toevoeg" ).click(function() {
+    $( "#dialog2" ).dialog( "open" );
+    
+    $("#dialog").hide('completer hide');
+    });
+  });
+//Einde voeg toe button//
+
+//Voeg toe button//
+$(function() {
+    $( "#dialog3" ).dialog({
+      autoOpen: false,
+      show: {
+      effect: "explode",
+      duration: 1000
+          
+      },
+      hide: {
+      effect: "explode",
+      duration: 1000
+      }
+    });
+ 
+    $( "#toevoeg1" ).click(function() {
+    $( "#dialog3" ).dialog( "open" );
+    
+    $("#dialog").hide('completer hide');
+    });
+  });
+//Einde voeg toe button//
+
+
+//Voeg toe button//
+$(function() {
+    $( "#dialog4" ).dialog({
+      autoOpen: false,
+      show: {
+      effect: "explode",
+      duration: 1000
+          
+      },
+      hide: {
+      effect: "explode",
+      duration: 1000
+      }
+    });
+ 
+    $( "#toevoeg2" ).click(function() {
+    $( "#dialog4" ).dialog( "open" );
+    
+    $("#dialog").hide('completer hide');
+        if ("#dailog2").hide 
+        var next= 
     });
   });
 
