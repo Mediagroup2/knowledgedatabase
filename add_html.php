@@ -12,11 +12,11 @@ error_reporting(E_ALL ^ E_NOTICE);
  $toegevoegd_op = mysql_real_escape_string($_POST['toegevoegd_op']);
   $queryEdit = mysql_query("UPDATE html SET titel = '$titel', tags = '$tags', url_video = '$url_video', link = '$link', beschrijving = '$beschrijving', toegevoegd_op = '$toegevoegd_op', WHERE id= '$id'");
   if ($queryEdit) {
-           header('location: toevoegen_tutorials.php');
+           header('location: toevoegen_html.php');
 
   }
 if (!empty($titel) OR ($url)) {
- $query = mysqli_query($con, "INSERT INTO html (titel, tags, categorie, url, beschrijving, toegevoegd_op) VALUES ('$_POST[titel]','$_POST[tags]','$_POST[categorie]','$_POST[url]','$_POST[beschrijving]','$_POST[toegevoegd_op]')");
+ $query = mysqli_query($con, "INSERT INTO html (titel, tags, url_video, link, beschrijving, toegevoegd_op) VALUES ('$_POST[titel]','$_POST[tags]','$_POST[url_video]','$_POST[link]','$_POST[beschrijving]','$_POST[toegevoegd_op]')");
   mysql_close();
  echo"Video succesvol toegevoegd";
  } else{

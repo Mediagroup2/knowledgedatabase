@@ -42,7 +42,7 @@
             <li>
                 HTML
                 <ul>
-                    <li class="scroll">Turtorial
+                    <li class="scroll">Tutorial
                     <table border="1">
                     <?php
                     include 'connect.inc.php';
@@ -68,7 +68,7 @@
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['url'] . '</td>';
+                 echo '<td>' . $row['link'] . '</td>';
                 }
                     ?>
                     <tr>
@@ -85,7 +85,7 @@
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['url'] . '</td>';
+                 echo '<td>' . $row['url_video'] . '</td>';
                 }
                     ?>
                      <tr>
@@ -102,9 +102,19 @@
         <ul>
             <li>
                 PHP
-               <ul>
-                    <li class="scroll">Turtorial
+              <ul>
+                    <li class="scroll">Tutorial
                     <table border="1">
+                    <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT titel FROM php');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['titel'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -112,6 +122,16 @@
                     </li>
                     <li class="scroll">Links
                      <table border="1">
+                             <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT link FROM php');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['link'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -119,17 +139,17 @@
                     </li>
                     <li class="scroll">Video's
                     <table border="1">
-                     <tr>
-                            <?php
+                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url FROM php');
+                   $query = mysqli_query($con, 'SELECT url_video FROM php');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['url'] . '</td>';
+                 echo '<td>' . $row['url_video'] . '</td>';
                 }
                     ?>
+                     <tr>
                     <td width="205">-</td>
                     </tr>
                     </table>
@@ -144,8 +164,18 @@
             <li class="CSS">
                 CSS
               <ul>
-                    <li class="scroll">Turtorial
+                    <li class="scroll">Tutorial
                     <table border="1">
+                    <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT titel FROM css');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['titel'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -153,24 +183,34 @@
                     </li>
                     <li class="scroll">Links
                      <table border="1">
+                             <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT link FROM css');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['link'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
                     </table>
                     </li>
                     <li class="scroll">Video's
-                    <table>
-                     <tr>
-                            <?php
+                    <table border="1">
+                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url FROM css');
+                   $query = mysqli_query($con, 'SELECT url_video FROM css');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['url'] . '</td>';
+                 echo '<td>' . $row['url_video'] . '</td>';
                 }
                     ?>
+                     <tr>
                     <td width="205">-</td>
                     </tr>
                     </table>
@@ -184,9 +224,19 @@
         <ul>
             <li>
                 PSD
-               <ul>
-                    <li class="scroll" >Turtorial
+              <ul>
+                    <li class="scroll">Tutorial
                     <table border="1">
+                    <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT titel FROM psd');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['titel'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -194,6 +244,16 @@
                     </li>
                     <li class="scroll">Links
                      <table border="1">
+                             <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT link FROM psd');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['link'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -201,17 +261,17 @@
                     </li>
                     <li class="scroll">Video's
                     <table border="1">
-                     <tr>
-                            <?php
+                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url FROM psd');
+                   $query = mysqli_query($con, 'SELECT url_video FROM psd');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['url'] . '</td>';
+                 echo '<td>' . $row['url_video'] . '</td>';
                 }
                     ?>
+                     <tr>
                     <td width="205">-</td>
                     </tr>
                     </table>
@@ -225,34 +285,54 @@
         <ul>
             <li>
                 JQuery
- <ul>
-                    <li class="scroll" >Turtorial
-                    <table>
+<ul>
+                    <li class="scroll">Tutorial
+                    <table border="1">
+                    <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT titel FROM jquery');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['titel'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
                     </table>
                     </li>
                     <li class="scroll">Links
-                     <table>
+                     <table border="1">
+                             <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT link FROM jquery');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['link'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
                     </table>
                     </li>
                     <li class="scroll">Video's
-                    <table>
-                     <tr>
-                            <?php
+                    <table border="1">
+                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url FROM jquery');
+                   $query = mysqli_query($con, 'SELECT url_video FROM jquery');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['url'] . '</td>';
+                 echo '<td>' . $row['url_video'] . '</td>';
                 }
                     ?>
+                     <tr>
                     <td width="205">-</td>
                     </tr>
                     </table>
@@ -280,9 +360,10 @@
 <button id="opener">Voeg toe!</button>
 
         
-<div id="dialog2" title="Toevoegen van Links"><?php include 'toevoegen_links.php'; ?></div>
-<div id="dialog3" title="Toevoegen van Turtorials"><?php include 'toevoegen_tutorials.php'; ?></div>
-<div id="dialog4" title="Toevoegen van Videos"><?php include 'toevoegen_videos.php'; ?></div>      
+<div id="dialog2" title="Toevoegen van html"><?php include 'toevoegen_html.php'; ?></div>
+<div id="dialog3" title="Toevoegen van php"><?php include 'toevoegen_php.php'; ?></div>
+<div id="dialog4" title="Toevoegen van css"><?php include 'toevoegen_css.php'; ?></div> 
+        
         <script src="script.js"></script>
    
  
