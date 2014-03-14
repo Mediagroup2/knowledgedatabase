@@ -199,9 +199,11 @@
         
 <div id="dialog" title="Toevoegen">
 
-<button id="toevoeg">Links</button></p>
-<button id="toevoeg1">Turtorials</button></p>
-<button id="toevoeg2">Videos</button></p>
+<button id="toevoeg">html</button></p>
+<button id="toevoeg">php</button></p>
+<button id="toevoeg">css</button></p>
+<button id="toevoeg">psd</button></p>
+<button id="toevoeg">jquery</button></p>
 
 
 </div>
