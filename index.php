@@ -44,6 +44,16 @@
                 <ul>
                     <li class="scroll">Turtorial
                     <table border="1">
+                    <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT titel FROM tutorials');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['titel'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -51,6 +61,16 @@
                     </li>
                     <li class="scroll">Links
                      <table border="1">
+                             <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url FROM links');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['url'] . '</td>';
+                }
+                    ?>
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -58,6 +78,16 @@
                     </li>
                     <li class="scroll">Video's
                     <table border="1">
+                     <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url FROM html');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['url'] . '</td>';
+                }
+                    ?>
                      <tr>
                     <td width="205">-</td>
                     </tr>
@@ -90,6 +120,16 @@
                     <li class="scroll">Video's
                     <table border="1">
                      <tr>
+                            <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url FROM php');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['url'] . '</td>';
+                }
+                    ?>
                     <td width="205">-</td>
                     </tr>
                     </table>
@@ -121,6 +161,16 @@
                     <li class="scroll">Video's
                     <table>
                      <tr>
+                            <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url FROM css');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['url'] . '</td>';
+                }
+                    ?>
                     <td width="205">-</td>
                     </tr>
                     </table>
@@ -152,6 +202,16 @@
                     <li class="scroll">Video's
                     <table border="1">
                      <tr>
+                            <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url FROM psd');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['url'] . '</td>';
+                }
+                    ?>
                     <td width="205">-</td>
                     </tr>
                     </table>
@@ -183,6 +243,16 @@
                     <li class="scroll">Video's
                     <table>
                      <tr>
+                            <?php
+                    include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url FROM jquery');
+               
+                while ($row= mysqli_fetch_assoc($query)){
+                echo '<tr>';
+            
+                 echo '<td>' . $row['url'] . '</td>';
+                }
+                    ?>
                     <td width="205">-</td>
                     </tr>
                     </table>
