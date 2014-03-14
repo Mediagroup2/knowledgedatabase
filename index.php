@@ -211,10 +211,9 @@ include 'toegoegen_links.php';
 <button id="opener">Voeg toe!</button>
 
         
-<div id="dialog2" title="Toevoegen van Links"><?php include 'toevoegen_links.php'; ?>
-</div>
-<div id="dialog3" title="Toevoegen van Turtorials"></div>
-<div id="dialog4" title="Toevoegen van Videos"></div>      
+<div id="dialog2" title="Toevoegen van Links"><?php include 'toevoegen_links.php'; ?></div>
+<div id="dialog3" title="Toevoegen van Turtorials"><?php include 'toevoegen_tutorials.php'; ?></div>
+<div id="dialog4" title="Toevoegen van Videos"><?php include 'toevoegen_videos.php'; ?></div>      
         <script src="script.js"></script>
    
  

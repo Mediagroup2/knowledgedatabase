@@ -7,7 +7,7 @@ include 'connect.inc.php';
     <title>toevoegen_links</title>
 </head>
 <body>
-        <div class="container1">
+        <div class="container">
     <form action="add_links.php" method="post">
      <input type="text" name="titel" placeholder="insert titel"><br>
            <input type="text" name="tags" placeholder="insert tags"><br>
