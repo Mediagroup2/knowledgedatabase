@@ -46,7 +46,7 @@
                     <table border="1">
                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT titel FROM tutorials');
+                   $query = mysqli_query($con, 'SELECT titel FROM html');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
@@ -63,7 +63,7 @@
                      <table border="1">
                              <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url FROM links');
+                   $query = mysqli_query($con, 'SELECT link FROM html');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
@@ -80,7 +80,7 @@
                     <table border="1">
                      <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url FROM html');
+                   $query = mysqli_query($con, 'SELECT url_video FROM html');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';

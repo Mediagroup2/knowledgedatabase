@@ -6,11 +6,11 @@ error_reporting(E_ALL ^ E_NOTICE);
    
  $titel = mysql_real_escape_string($_POST['titel']);
  $tags = mysql_real_escape_string($_POST['tags']);
- $categorie = mysql_real_escape_string($_POST['categorie']);
- $url = mysql_real_escape_string($_POST['url']);
+ $url_video = mysql_real_escape_string($_POST['url_video']);
+ $link = mysql_real_escape_string($_POST['link']);
  $beschrijving = mysql_real_escape_string($_POST['beschrijving']);
  $toegevoegd_op = mysql_real_escape_string($_POST['toegevoegd_op']);
-  $queryEdit = mysql_query("UPDATE html SET titel = '$titel', tags = '$tags', categorie = '$categorie', url = '$url', beschrijving = '$beschrijving', toegevoegd_op = '$toegevoegd_op', WHERE id= '$id'");
+  $queryEdit = mysql_query("UPDATE html SET titel = '$titel', tags = '$tags', url_video = '$url_video', link = '$link', beschrijving = '$beschrijving', toegevoegd_op = '$toegevoegd_op', WHERE id= '$id'");
   if ($queryEdit) {
            header('location: toevoegen_tutorials.php');
 
