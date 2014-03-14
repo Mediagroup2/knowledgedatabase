@@ -1,6 +1,5 @@
 <?php include 'connect.inc.php';
-$querySelect = mysqli_query($con, 'SELECT * FROM tbl_gebruikers LIMIT 1');
-$result = mysqli_fetch_assoc($querySelect);
+
 ?>
 
 
@@ -200,9 +199,7 @@ $result = mysqli_fetch_assoc($querySelect);
         
 <div id="dialog" title="Toevoegen">
 
-<button id="toevoeg">Links</button><?php
-include 'toegoegen_links.php';
-?></p>
+<button id="toevoeg">Links</button></p>
 <button id="toevoeg1">Turtorials</button></p>
 <button id="toevoeg2">Videos</button></p>
 
