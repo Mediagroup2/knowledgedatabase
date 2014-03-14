@@ -199,7 +199,10 @@ $result = mysqli_fetch_assoc($querySelect);
 
         
 <div id="dialog" title="Toevoegen">
-<button id="toevoeg">Links</button></p>
+
+<button id="toevoeg">Links</button><?php
+include 'toegoegen_links.php';
+?></p>
 <button id="toevoeg1">Turtorials</button></p>
 <button id="toevoeg2">Videos</button></p>
 
@@ -208,11 +211,12 @@ $result = mysqli_fetch_assoc($querySelect);
 <button id="opener">Voeg toe!</button>
 
         
-<div id="dialog2" title="Toevoegen van Links"></div>
+<div id="dialog2" title="Toevoegen van Links"><?php include 'toevoegen_links.php'; ?>
+</div>
 <div id="dialog3" title="Toevoegen van Turtorials"></div>
 <div id="dialog4" title="Toevoegen van Videos"></div>      
         <script src="script.js"></script>
-         
+   
  
     </body>
     <footer>

@@ -7,7 +7,7 @@ include 'connect.inc.php';
     <meta charset="UTF-8">
     <title>toevoegen_tutorials</title>
 <body>
-       <div class="container">
+       <div class="container2">
     <form action="add_tutorials.php" method="post">
      <input type="text" name="titel" placeholder="insert titel"><br>
            <input type="text" name="tags" placeholder="insert tags"><br>

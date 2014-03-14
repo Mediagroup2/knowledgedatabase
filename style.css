@@ -22,7 +22,7 @@ box-shadow:3px 3px 12px #4a4a4a;
 }
 
 #mainNav{
-margin-top:-13px;
+margin-top:-3px;
 float:left;
 width:250px;
 Display:inline;
@@ -172,6 +172,50 @@ float:right;
      text-align:center;
      color:white;
 }
+
+#dialog2{
+
+     height:00px;
+     background-color: lightgrey;
+     border:solid;
+     border-width:10px;
+     border-color:black;
+     padding:12px;
+     text-align:center;
+     color:white;
+}
+
+#dialog3{
+
+     height:00px;
+     background-color: lightgrey;
+     border:solid;
+     border-width:10px;
+     border-color:black;
+     padding:142px;
+     text-align:center;
+     color:white;
+}
+
+#dialog4{
+
+     height:00px;
+     background-color: lightgrey;
+     border:solid;
+     border-width:10px;
+     border-color:black;
+     padding:142px;
+     text-align:center;
+     color:white;
+}
+
+
+
+
+
+
+
+
 #toevoeg{
     float:left;
     width:50px;

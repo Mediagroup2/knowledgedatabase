@@ -7,7 +7,7 @@ include 'connect.inc.php';
     <title>toevoegen_videos</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container3">
     <form action="add_videos.php" method="post">
      <input type="text" name="titel" placeholder="insert titel"><br>
            <input type="text" name="tags" placeholder="insert tags"><br>

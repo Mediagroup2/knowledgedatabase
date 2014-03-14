@@ -60,7 +60,7 @@ $(function() {
     $( "#toevoeg" ).click(function() {
     $( "#dialog2" ).dialog( "open" );
     
-    $("#dialog").hide('completer hide');
+//    $("#dialog").hide('complete hide');
     });
   });
 //Einde voeg toe button//
@@ -83,7 +83,7 @@ $(function() {
     $( "#toevoeg1" ).click(function() {
     $( "#dialog3" ).dialog( "open" );
     
-    $("#dialog").hide('completer hide');
+//    $("#dialog").hide('complete hide');
     });
   });
 //Einde voeg toe button//
@@ -107,7 +107,8 @@ $(function() {
     $( "#toevoeg2" ).click(function() {
     $( "#dialog4" ).dialog( "open" );
     
-    $("#dialog").hide('completer hide');
+//    $("#dialog").hide('complete hide');
+        $(this).dialog('close');
        
     });
   });
