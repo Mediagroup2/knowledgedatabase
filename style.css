@@ -6,6 +6,12 @@ padding:0;
 }
 
 .container {
+    height:235px;
+    width: 230px;
+    margin: 0 auto;
+}
+
+.container1 {
     height:695px;
     width: 1280px;
     margin: 0 auto;
@@ -184,8 +190,8 @@ input#search_icon{
     padding-bottom: 4px;
 }
 #dialog{
-/*     float:right;*/
-     height:100px;
+     float:right;
+/*     height:100px;*/
      background-color: lightgrey;
      border:solid;
      border-width:10px;
@@ -198,11 +204,12 @@ input#search_icon{
 #dialog2{
 
      height:00px;
-     background-color: lightgrey;
+     background-color: #3d8af7;
      border:solid;
      border-width:10px;
      border-color:black;
      padding:12px;
+     padding-top:0px;
      text-align:center;
      color:white;
 }
@@ -210,11 +217,14 @@ input#search_icon{
 #dialog3{
 
      height:00px;
-     background-color: lightgrey;
+     margin-top:00px;
+     float:center;
+     background-color: #3d8af7;
      border:solid;
      border-width:10px;
      border-color:black;
-     padding:142px;
+     padding:12px;
+     padding-top:0px;
      text-align:center;
      color:white;
 }
@@ -222,11 +232,12 @@ input#search_icon{
 #dialog4{
 
      height:00px;
-     background-color: lightgrey;
+     background-color: #3d8af7;
      border:solid;
      border-width:10px;
      border-color:black;
-     padding:142px;
+     padding:12px;
+     padding-top:0px;
      text-align:center;
      color:white;
 }
@@ -234,11 +245,12 @@ input#search_icon{
 #dialog5{
 
      height:00px;
-     background-color: lightgrey;
+     background-color: #3d8af7;
      border:solid;
      border-width:10px;
      border-color:black;
-     padding:142px;
+     padding:12px;
+     padding-top:0px;
      text-align:center;
      color:white;
 }
@@ -246,11 +258,13 @@ input#search_icon{
 #dialog6{
 
      height:00px;
-     background-color: lightgrey;
+     background-color: #3d8af7;
      border:solid;
      border-width:10px;
      border-color:black;
-     padding:142px;
+     padding:12px;
+     padding-top:0px;
+     padding-left:-px;
      text-align:center;
      color:white;
 }

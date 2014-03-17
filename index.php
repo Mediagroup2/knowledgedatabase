@@ -17,7 +17,7 @@
 <link rel="shortcut icon" type="image/png" href="img/logo/download.jpg">
 <head>  
  
- <div class="container">
+ <div class="container1">
      <header>
      
      <div class="rss">
