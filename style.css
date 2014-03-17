@@ -21,12 +21,23 @@ border-width:10px;
 box-shadow:3px 3px 12px #4a4a4a;
 }
 
+.logo_zoekpagina {
+border-style:solid;
+border-color:red;
+border-width:10px;
+box-shadow:3px 3px 12px #4a4a4a; 
+width: 180;
+height: 180px; 
+display: block;    
+margin: auto;    
+    
+}
+
 #mainNav{
 margin-top:-3px;
 float:left;
 width:250px;
-Display:inline;
-
+display:inline;    
 }
 
 nav ul{
@@ -356,6 +367,10 @@ input#search_icon{
     background:red;
     font-size:30px;
 	cursor: pointer; cursor: hand;
+}
+
+#header_zoekpagina {
+    
 }
     
 

@@ -6,11 +6,16 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action='./search.php' method='get'>
-        <input type='text' name='k' size='10' value="<?php echo $_GET['k']; ?>" />
-        <input type='submit' value='Search'>
-    </form>
+     <img src="img/logo/logo.png" class="logo_zoekpagina">
+     <hr />
+  <div id='header_zoekpagina'>
+        <form action='search.php' method='get'>
+            <input type='text' name='k' id='search_veld' size='10' />
+            <input type='submit' id='search_icon' value=''>
+        </form> 
+  </div>      
     <hr />
+    
     <?php
         $k = $_GET['k'];
         $i = 0;

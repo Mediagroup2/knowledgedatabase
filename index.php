@@ -35,7 +35,7 @@
      
      
      <div class="call-to-action1">
-      <img src="img/logo/logo.png" class="logo">
+    <img src="img/logo/logo.png" class="logo">
       
       
       <div id="zoekfunctie">
