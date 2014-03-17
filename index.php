@@ -55,12 +55,12 @@
                     <table border="1">
                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT titel FROM html');
+                   $query = mysqli_query($con, 'SELECT beschrijving FROM html');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['titel'] . '</td>';
+                 echo '<td>' . $row['beschrijving'] . '</td>';
                 }
                     ?>
                     <tr>
@@ -72,12 +72,11 @@
                      <table border="1">
                              <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT link FROM html');
+                   $query = mysqli_query($con, 'SELECT link, titel_link FROM html');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                echo '<tr>';
             
-                 echo '<td>' . $row['link'] . '</td>';
+                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td></tr>';
                 }
                     ?>
                     <tr>
@@ -88,13 +87,12 @@
                     <li class="scroll">Video's
                     <table border="1">
                      <?php
-                    include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url_video FROM html');
+                  include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url_video, titel_video FROM html');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                echo '<tr>';
             
-                 echo '<td>' . $row['url_video'] . '</td>';
+                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
                 }
                     ?>
                      <tr>
@@ -116,12 +114,12 @@
                     <table border="1">
                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT titel FROM php');
+                   $query = mysqli_query($con, 'SELECT beschrijving FROM php');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['titel'] . '</td>';
+                 echo '<td>' . $row['beschrijving'] . '</td>';
                 }
                     ?>
                     <tr>
@@ -132,13 +130,14 @@
                     <li class="scroll">Links
                      <table border="1">
                              <?php
-                    include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT link FROM php');
+                   include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT link, titel_link FROM php');
                
                 while ($row= mysqli_fetch_assoc($query)){
+                
                 echo '<tr>';
             
-                 echo '<td>' . $row['link'] . '</td>';
+                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -149,13 +148,14 @@
                     <li class="scroll">Video's
                     <table border="1">
                      <?php
-                    include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url_video FROM php');
+                  include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url_video, titel_video FROM php');
                
                 while ($row= mysqli_fetch_assoc($query)){
+                
                 echo '<tr>';
             
-                 echo '<td>' . $row['url_video'] . '</td>';
+                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td><tr>';
                 }
                     ?>
                      <tr>
@@ -177,12 +177,12 @@
                     <table border="1">
                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT titel FROM css');
+                   $query = mysqli_query($con, 'SELECT beschrijving FROM css');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['titel'] . '</td>';
+                 echo '<td>' . $row['beschrijving'] . '</td>';
                 }
                     ?>
                     <tr>
@@ -194,12 +194,13 @@
                      <table border="1">
                              <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT link FROM css');
+                   $query = mysqli_query($con, 'SELECT link, titel_link FROM css');
                
                 while ($row= mysqli_fetch_assoc($query)){
+                
                 echo '<tr>';
             
-                 echo '<td>' . $row['link'] . '</td>';
+                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -210,13 +211,14 @@
                     <li class="scroll">Video's
                     <table border="1">
                      <?php
-                    include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url_video FROM css');
+                   include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url_video, titel_video FROM css');
                
                 while ($row= mysqli_fetch_assoc($query)){
+                
                 echo '<tr>';
             
-                 echo '<td>' . $row['url_video'] . '</td>';
+                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td><tr>';
                 }
                     ?>
                      <tr>
@@ -238,12 +240,12 @@
                     <table border="1">
                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT titel FROM psd');
+                   $query = mysqli_query($con, 'SELECT beschrijving FROM psd');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['titel'] . '</td>';
+                 echo '<td>' . $row['beschrijving'] . '</td>';
                 }
                     ?>
                     <tr>
@@ -255,12 +257,13 @@
                      <table border="1">
                              <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT link FROM psd');
+                   $query = mysqli_query($con, 'SELECT link, titel_link FROM psd');
                
                 while ($row= mysqli_fetch_assoc($query)){
+                
                 echo '<tr>';
             
-                 echo '<td>' . $row['link'] . '</td>';
+                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -271,13 +274,14 @@
                     <li class="scroll">Video's
                     <table border="1">
                      <?php
-                    include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url_video FROM psd');
+                   include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url_video, titel_video FROM psd');
                
                 while ($row= mysqli_fetch_assoc($query)){
+                
                 echo '<tr>';
             
-                 echo '<td>' . $row['url_video'] . '</td>';
+                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td><tr>';
                 }
                     ?>
                      <tr>
@@ -299,12 +303,12 @@
                     <table border="1">
                     <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT titel FROM jquery');
+                   $query = mysqli_query($con, 'SELECT beschrijving FROM jquery');
                
                 while ($row= mysqli_fetch_assoc($query)){
                 echo '<tr>';
             
-                 echo '<td>' . $row['titel'] . '</td>';
+                 echo '<td>' . $row['beschrijving'] . '</td>';
                 }
                     ?>
                     <tr>
@@ -315,13 +319,12 @@
                     <li class="scroll">Links
                      <table border="1">
                              <?php
-                    include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT link FROM jquery');
+                   include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT link, titel_link FROM jquery');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                echo '<tr>';
             
-                 echo '<td>' . $row['link'] . '</td>';
+                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td></tr>';
                 }
                     ?>
                     <tr>
@@ -332,13 +335,12 @@
                     <li class="scroll">Video's
                     <table border="1">
                      <?php
-                    include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT url_video FROM jquery');
+                   include 'connect.inc.php';
+                   $query = mysqli_query($con, 'SELECT url_video, titel_video FROM jquery');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                echo '<tr>';
             
-                 echo '<td>' . $row['url_video'] . '</td>';
+                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
                 }
                     ?>
                      <tr>
