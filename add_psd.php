@@ -18,11 +18,11 @@ error_reporting(E_ALL ^ E_NOTICE);
 if (!empty($titel) OR ($url)) {
  $query = mysqli_query($con, "INSERT INTO html (titel, tags, url_video, link, beschrijving, toegevoegd_op) VALUES ('$_POST[titel]','$_POST[tags]','$_POST[url_video]','$_POST[link]','$_POST[beschrijving]','$_POST[toegevoegd_op]')");
   mysql_close();
- echo"Video succesvol toegevoegd";
+ echo" Succesvol toegevoegd!";
  } else{
  echo "Je hebt niet alle velden ingevuld";
  }
  ?>
 <html>
-  <a href="toevoegen_psd.php"> Terug naar videos</a>
+  <a href="index.php"> Terug naar home</a>
 </html>
