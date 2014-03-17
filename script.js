@@ -55,7 +55,7 @@ $(function() {
       }
     });
  
-    $( "#toevoeg" ).click(function() {
+    $( "#toevoeg1" ).click(function() {
     $( "#dialog2" ).dialog( "open" );
     
 //    $("#dialog").hide('complete hide');
@@ -78,7 +78,7 @@ $(function() {
       }
     });
  
-    $( "#toevoeg1" ).click(function() {
+    $( "#toevoeg2" ).click(function() {
     $( "#dialog3" ).dialog( "open" );
     
 //    $("#dialog").hide('complete hide');
@@ -102,8 +102,56 @@ $(function() {
       }
     });
  
-    $( "#toevoeg2" ).click(function() {
+    $( "#toevoeg3" ).click(function() {
     $( "#dialog4" ).dialog( "open" );
+    
+//    $("#dialog").hide('complete hide');
+        $(this).dialog('close');
+       
+    });
+  });
+
+//Voeg toe button//
+$(function() {
+    $( "#dialog5" ).dialog({
+      autoOpen: false,
+      show: {
+      effect: "explode",
+      duration: 1000
+          
+      },
+      hide: {
+      effect: "explode",
+      duration: 1000
+      }
+    });
+ 
+    $( "#toevoeg4" ).click(function() {
+    $( "#dialog5" ).dialog( "open" );
+    
+//    $("#dialog").hide('complete hide');
+        $(this).dialog('close');
+       
+    });
+  });
+
+//Voeg toe button//
+$(function() {
+    $( "#dialog6" ).dialog({
+      autoOpen: false,
+      show: {
+      effect: "explode",
+      duration: 1000
+          
+      },
+      hide: {
+      effect: "explode",
+      duration: 1000
+      }
+    });
+ 
+    $( "#toevoeg5" ).click(function() {
+    $( "#dialog6" ).dialog( "open" );
     
 //    $("#dialog").hide('complete hide');
         $(this).dialog('close');

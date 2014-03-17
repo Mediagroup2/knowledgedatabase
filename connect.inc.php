@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost','root', '','media_group2');// Je maakt connectie met database doormiddel van je gegevens van je database hier in te zetten.
+$con = mysqli_connect('localhost','root', 'root','media_group2');// Je maakt connectie met database doormiddel van je gegevens van je database hier in te zetten.
 
 if (mysqli_connect_error()) { 
     echo "kan geen connectie maken met database"; 

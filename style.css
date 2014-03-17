@@ -209,6 +209,30 @@ float:right;
      color:white;
 }
 
+#dialog5{
+
+     height:00px;
+     background-color: lightgrey;
+     border:solid;
+     border-width:10px;
+     border-color:black;
+     padding:142px;
+     text-align:center;
+     color:white;
+}
+
+#dialog6{
+
+     height:00px;
+     background-color: lightgrey;
+     border:solid;
+     border-width:10px;
+     border-color:black;
+     padding:142px;
+     text-align:center;
+     color:white;
+}
+
 
 
 
@@ -255,6 +279,65 @@ float:right;
 	cursor: pointer; cursor: hand;
 }
 
+#toevoeg1{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
+
+#toevoeg1:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
+
+#toevoeg2{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
+
+#toevoeg2:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
+  
+#toevoeg3{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
+
+#toevoeg3:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
+
+#toevoeg4{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
+
+#toevoeg4:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
 
     
  

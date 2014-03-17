@@ -349,11 +349,11 @@
         
 <div id="dialog" title="Toevoegen">
 
-<button id="toevoeg">html</button></p>
-<button id="toevoeg">php</button></p>
-<button id="toevoeg">css</button></p>
-<button id="toevoeg">psd</button></p>
-<button id="toevoeg">jquery</button></p>
+<button id="toevoeg1">html</button></p>
+<button id="toevoeg2">php</button></p>
+<button id="toevoeg3">css</button></p>
+<button id="toevoeg4">psd</button></p>
+<button id="toevoeg5">jquery</button></p>
 
 
 </div>
@@ -363,6 +363,8 @@
 <div id="dialog2" title="Toevoegen van html"><?php include 'toevoegen_html.php'; ?></div>
 <div id="dialog3" title="Toevoegen van php"><?php include 'toevoegen_php.php'; ?></div>
 <div id="dialog4" title="Toevoegen van css"><?php include 'toevoegen_css.php'; ?></div> 
+<div id="dialog5" title="Toevoegen van psd"><?php include 'toevoegen_psd.php'; ?></div> 
+<div id="dialog6" title="Toevoegen van jquery"><?php include 'toevoegen_jquery.php'; ?></div> 
         
         <script src="script.js"></script>
    
