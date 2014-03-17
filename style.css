@@ -160,7 +160,18 @@ margin-top: 0px;
 float:right;
 	
 }
+input#search_veld {
+ background-color: white;
+ height: 18px;
+}
 
+input#search_icon{
+    background: url('img/search_icon.jpg') no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    padding-left: 20px;
+    height: 20px;
+}
 #dialog{
 /*     float:right;*/
      height:100px;

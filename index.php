@@ -36,6 +36,15 @@
      
      <div class="call-to-action1">
       <img src="img/logo/logo.png" class="logo">
+      
+      
+      <div id="zoekfunctie">
+        <form action='search.php' method='get'>
+        <input type='text' name='k' id='search_veld' size='10' />
+        <input type='submit' id='search_icon' value=''>
+      </form> 
+</div>                   
+        
       <div id="mainNav">
     <nav>
         <ul>
@@ -339,14 +348,12 @@
                     </li>
                 </ul>
             </li>
-    </nav>
-</div>  
+        </nav>
+    </div>  
       </header>
+   </head>
     <body>
-    
-    </head>
-
-        
+          
 <div id="dialog" title="Toevoegen">
 
 <button id="toevoeg1">html</button></p>
