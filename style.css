@@ -160,7 +160,18 @@ margin-top: 0px;
 float:right;
 	
 }
+input#search_veld {
+ background-color: white;
+ height: 18px;
+}
 
+input#search_icon{
+    background: url('img/search_icon.jpg') no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    height: 20px;
+    padding-bottom: 4px;
+}
 #dialog{
 /*     float:right;*/
      height:100px;
@@ -338,7 +349,20 @@ float:right;
     font-size:30px;
 	cursor: pointer; cursor: hand;
 }
+#toevoeg5{
+    background-image:url(img/oranje.jpg);
+    color:white;
+    width:180px;
+    height:50px;
+    float:center;
+    
+}
 
+#toevoeg5:hover{
+    background:red;
+    font-size:30px;
+	cursor: pointer; cursor: hand;
+}
     
  
 
