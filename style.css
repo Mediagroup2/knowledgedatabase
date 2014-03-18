@@ -383,11 +383,20 @@ input#search_icon{
 	cursor: pointer; cursor: hand;
 }
 
-#header_zoekpagina {
-    
+#home_zoekpagina.li {
+    width:140px;
+    list-style: none;
 }
     
-
+#back_button_home {
+    background-image: url(img/download.jpg);
+	box-shadow:1px 1px 8px #4a4a4a;
+	height:46px;
+	width:250px;
+    color: white;
+	font-size: 25px;
+	border-radius: 20px;   
+}
 
 
 
