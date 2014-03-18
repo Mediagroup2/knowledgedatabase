@@ -11,13 +11,13 @@ if (isset($_POST['submit'])) {
  $beschrijving = mysqli_real_escape_string($con, $_POST['beschrijving']);
  	$toegevoegd_op = mysqli_real_escape_string($con, $_POST['toegevoegd_op']);
    $titel_video = mysqli_real_escape_string($con, $_POST['titel_video']);
-/*  $queryEdit = mysql_query("UPDATE css SET titel_link = '$titel_link', tags = '$tags', url_video = '$url_video', link = '$link', beschrijving = '$beschrijving', toegevoegd_op = '$toegevoegd_op', titel_video = '$titel_video',WHERE id= '$id'");
+/*  $queryEdit = mysql_query("UPDATE html SET titel_link = '$titel_link', tags = '$tags', url_video = '$url_video', link = '$link', beschrijving = '$beschrijving', toegevoegd_op = '$toegevoegd_op', titel_video = '$titel_video',WHERE id= '$id'");
   if ($queryEdit) {
            header('location: toevoegen_html.php');
 
   }*/
 
- $query = mysqli_query($con, "INSERT INTO html (titel_link, tags, url_video, link, beschrijving, toegevoegd_op) VALUES ('$titel_link','$tags','$url_video','$link','$beschrijving','$toegevoegd_op')") or die('sql query werkt voor geen meter....');
+ $query = mysqli_query($con, "INSERT INTO html (titel_link, tags, url_video, link, beschrijving, toegevoegd_op, titel_video) VALUES ('$titel_link','$tags','$url_video','$link','$beschrijving','$toegevoegd_op','$titel_video')") or die('sql query werkt voor geen meter....');
 //  mysqli_close();
   echo "Succesvol toegevoegd!";
  } else {

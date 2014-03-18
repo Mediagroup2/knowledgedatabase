@@ -22,6 +22,8 @@ include 'connect.inc.php';
 
 <input type="text" name="tags" placeholder="insert tags"><br>
 
+
+
                        <input type="date" name="toegevoegd_op" placeholder="datum"><br>
                      <input type="submit" name="submit" value="Toevoegen">
                     <!-- <input type="submit" value="Annuleren">-->
@@ -37,6 +39,7 @@ $queryFetch = ($querySelect);
     echo "<td>".$queryFetch['url_video']."</td>";
     echo "<td>".$queryFetch['link']."</td>";
     echo "<td>".$queryFetch['beschrijving']."</td>";
+        echo "<td>".$queryFetch['toegevoegd_op']."</td>";
         echo "<td>".$queryFetch['titel_video']."</td>";
-    echo "<td>".$queryFetch['toegevoegd_op']."</td>";
+    
                  ?>
