@@ -9,11 +9,16 @@ include 'connect.inc.php';
 <body>
     <div class="container">
     <form action="add_psd.php" method="post">
-    <input type="text" name="titel_link" placeholder="insert titel"><br>
-           <input type="text" name="tags" placeholder="insert tags"><br>
- <input type="text" name="url_video" placeholder="insert tags"><br>
-                           <input type="text" name="link" placeholder="url"><br>
-                        <input type="text" name="titel_video" placeholder="insert titel_video"><br>
+    <input type="text" name="titel_link" placeholder="insert titel_link"><br>
+           
+<input type="text" name="link" placeholder="url"><br>
+
+<input type="text" name="titel_video" placeholder="insert titel_video"><br>
+
+<input type="text" name="url_video" placeholder="insert url_video"><br>
+
+<input type="text" name="tags" placeholder="insert tags"><br>
+
                        <input type="date" name="datum" placeholder="datum"><br>
                      <input type="submit" value="Toevoegen">
                      <input type="submit" value="Annuleren">
