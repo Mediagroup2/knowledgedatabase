@@ -12,8 +12,9 @@
         <form action='search.php' method='get'>
             <input type='text' name='k' id='search_veld' size='10' />
             <input type='submit' id='search_icon' value=''>
+            <input type="button" id='back_button_home' value="Terug naar home" onclick="window.location.href='index.php'" />
         </form> 
-  </div>      
+           
     <hr />
     
     <?php
