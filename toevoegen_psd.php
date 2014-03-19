@@ -9,9 +9,12 @@ include 'connect.inc.php';
 <body>
     <div class="container">
     <form action="add_psd.php" method="post">
-    <input type="text" name="titel_link" placeholder="insert titel_link"><br>
+    
+<input type="text" name="titel_link" placeholder="insert titel_link"><br>
            
 <input type="text" name="link" placeholder="url"><br>
+
+<input type="text" name="beschrijving" id="" placeholder="beschrijving">
 
 <input type="text" name="titel_video" placeholder="insert titel_video"><br>
 
@@ -19,9 +22,11 @@ include 'connect.inc.php';
 
 <input type="text" name="tags" placeholder="insert tags"><br>
 
-                       <input type="date" name="datum" placeholder="datum"><br>
-                     <input type="submit" value="Toevoegen">
-                     <input type="submit" value="Annuleren">
+
+
+                       <input type="date" name="toegevoegd_op" placeholder="datum"><br>
+                     <input type="submit" name="submit" value="Toevoegen">
+                    <!-- <input type="submit" value="Annuleren">-->
                      </form>
                </tr>
                  </div>
@@ -34,7 +39,7 @@ $queryFetch = ($querySelect);
     echo "<td>".$queryFetch['url_video']."</td>";
     echo "<td>".$queryFetch['link']."</td>";
     echo "<td>".$queryFetch['beschrijving']."</td>";
+        echo "<td>".$queryFetch['toegevoegd_op']."</td>";
         echo "<td>".$queryFetch['titel_video']."</td>";
-    echo "<td>".$queryFetch['toegevoegd_op']."</td>";
-                
+    
                  ?>
