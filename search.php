@@ -21,7 +21,7 @@
         $k = $_GET['k'];
         $i = 0;
         $terms = explode(" ", $k);
-        $query = "SELECT * FROM zoekfunctie WHERE ";
+        $query = "SELECT * FROM html, jquery, php, psd, css WHERE tags = $k ";
         
         foreach ($terms as $each) {
             $i++;
