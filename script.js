@@ -1,14 +1,13 @@
 $(document).ready(function(e) {
     //menubar//
-//   $('#mainnav nav ul li').hide(function();{
-//        $(this).children('nav').hide(100).after(){
+//menubar dicht houden door de functie hide//
     $('#mainNav nav ul li ul').hide();
-    
+//mouseenter=wanneer je er met d//
     $('#mainNav nav ul li').mouseenter(function(){
 		$(this).children('ul').show();
         $(this).children('ul').stop(450).slideDown(50);
     });
-    
+
     $('#mainNav nav ul li').mouseleave(function(){
         $(this).children('ul').stop(450).slideUp(300);
     });
