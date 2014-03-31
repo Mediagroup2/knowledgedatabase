@@ -386,7 +386,7 @@
     <footer>
         
         <div id="footer">
-            <marquee behavior="scroll" direction="left" scrollamount="6">Site is made by : Dean Vermeulen Mitch Walravens Jesse Peffer Remmert KLoppenburg. MEDIA GROUP 2</marquee>
+            <marquee behavior="scroll" direction="left" scrollamount="6">Site is made by : Dean Vermeulen Mitch Walravens Jesse Peffer Remmert Kloppenburg. MEDIA GROUP 2</marquee>
         </div>
     
         

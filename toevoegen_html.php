@@ -14,7 +14,7 @@ include 'connect.inc.php';
            
 <input type="text" name="link" placeholder="url"><br>
 
-<input type="text" name="beschrijving" id="" placeholder="beschrijving">
+<input type="text" name="titel_Tutorial" id="" placeholder="beschrijving"><br>
 
 <input type="text" name="titel_video" placeholder="insert titel_video"><br>
 
