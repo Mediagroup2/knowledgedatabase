@@ -14,7 +14,13 @@ include 'connect.inc.php';
            
 <input type="text" name="link" placeholder="url"><br>
 
+<<<<<<< HEAD
 <input type="text" name="titel_Tutorial" id="" placeholder="beschrijving"><br>
+=======
+<input type="text" name="titel_tutorial" id="" placeholder="titel_tutorial">
+
+<input type="text" name="url_tutorial" id="" placeholder="url_tutorial">
+>>>>>>> Goeie tutorials toegevoegd
 
 <input type="text" name="titel_video" placeholder="insert titel_video"><br>
 
@@ -38,7 +44,8 @@ $queryFetch = ($querySelect);
  echo "<td>".$queryFetch['tags']."</td>";
     echo "<td>".$queryFetch['url_video']."</td>";
     echo "<td>".$queryFetch['link']."</td>";
-    echo "<td>".$queryFetch['beschrijving']."</td>";
+    echo "<td>".$queryFetch['titel_tutorial']."</td>";
+            echo "<td>".$queryFetch['url_tutorial']."</td>";
         echo "<td>".$queryFetch['toegevoegd_op']."</td>";
         echo "<td>".$queryFetch['titel_video']."</td>";
     

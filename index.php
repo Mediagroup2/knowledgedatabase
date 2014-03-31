@@ -53,17 +53,19 @@
                 <ul>
                     <li class="scroll">Tutorial
                     <table border="1">
-                    <?php
+                      <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT beschrijving FROM html');
-                         echo '<tr><td><a href="tutorial1.php' .$row['beschrijving'] . '"> </a></td></tr>';
+                   $query = mysqli_query($con, 'SELECT titel_tutorial, url_tutorial FROM html');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                echo '<tr>';
             
-                 echo '<td>' . $row['beschrijving'] . '</td>';
+         echo '<tr><td><a href="' .$row['titel_tutorial'] . '">' . $row['url_tutorial'] . ' </a></td><tr>';
                 }
                     ?>
+                     
+   
+                
+                
                     <tr>
                     <td width="205">-</td>
                     </tr>
@@ -113,15 +115,13 @@
               <ul>
                     <li class="scroll">Tutorial
                     <table border="1">
-                    <?php
+                                   <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT beschrijving FROM php');
+                   $query = mysqli_query($con, 'SELECT titel_tutorial, url_tutorial FROM php');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                 echo '<tr><td><a href="tutorial2.php' .$row['beschrijving'] . '"> </a></td></tr>';
-             
             
-                 echo '<td>' . $row['beschrijving'] . '</td>';
+         echo '<tr><td><a href="' .$row['titel_tutorial'] . '">' . $row['url_tutorial'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -177,15 +177,13 @@
               <ul>
                     <li class="scroll">Tutorial
                     <table border="1">
-                    <?php
+                                   <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT beschrijving FROM css');
+                   $query = mysqli_query($con, 'SELECT titel_tutorial, url_tutorial FROM css');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                echo '<tr>';
-                 echo '<tr><td><a href="tutorial3.php' .$row['beschrijving'] . '"> </a></td></tr>';
             
-                 echo '<td>' . $row['beschrijving'] . '</td>';
+         echo '<tr><td><a href="' .$row['titel_tutorial'] . '">' . $row['url_tutorial'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -241,15 +239,13 @@
               <ul>
                     <li class="scroll">Tutorial
                     <table border="1">
-                    <?php
+                                   <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT beschrijving FROM psd');
+                   $query = mysqli_query($con, 'SELECT titel_tutorial, url_tutorial FROM psd');
                
                 while ($row= mysqli_fetch_assoc($query)){
-                 echo '<tr><td><a href="tutorial4.php' .$row['beschrijving'] . '"> </a></td></tr>';
             
-            
-                 echo '<td>' . $row['beschrijving'] . '</td>';
+         echo '<tr><td><a href="' .$row['titel_tutorial'] . '">' . $row['url_tutorial'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -305,14 +301,13 @@
 <ul>
                     <li class="scroll">Tutorial
                     <table border="1">
-                    <?php
+                                   <?php
                     include 'connect.inc.php';
-                   $query = mysqli_query($con, 'SELECT beschrijving FROM jquery');
+                   $query = mysqli_query($con, 'SELECT titel_tutorial, url_tutorial FROM jquery');
                
                 while ($row= mysqli_fetch_assoc($query)){
-              echo '<tr><td><a href="tutorial5.php' .$row['beschrijving'] . '"> </a></td></tr>';
             
-                 echo '<td>' . $row['beschrijving'] . '</td>';
+         echo '<tr><td><a href="' .$row['titel_tutorial'] . '">' . $row['url_tutorial'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
