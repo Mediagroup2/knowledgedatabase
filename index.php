@@ -77,7 +77,7 @@
                
                 while ($row= mysqli_fetch_assoc($query)){
             
-                 echo '<tr><td><a href="../../' .$row['link'] . '">' . $row['titel_link'] . ' </a></td></tr>';
+         echo '<tr><td><a href="http://www.' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -93,7 +93,7 @@
                
                 while ($row= mysqli_fetch_assoc($query)){
             
-                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
+                 echo '<tr><td><a href="http://www.' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
                 }
                     ?>
                      <tr>
@@ -139,7 +139,7 @@
                 
                 echo '<tr>';
             
-                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
+                  echo '<tr><td><a href="http://www.' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -157,7 +157,7 @@
                 
                 echo '<tr>';
             
-                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td><tr>';
+            echo '<tr><td><a href="http://www.' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
                 }
                     ?>
                      <tr>
@@ -203,7 +203,7 @@
                 
                 echo '<tr>';
             
-                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
+              echo '<tr><td><a href="http://www.' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -221,7 +221,7 @@
                 
                 echo '<tr>';
             
-                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td><tr>';
+          echo '<tr><td><a href="http://www.' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
                 }
                     ?>
                      <tr>
@@ -267,7 +267,7 @@
                 
                 echo '<tr>';
             
-                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
+               echo '<tr><td><a href="http://www.' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -285,7 +285,7 @@
                 
                 echo '<tr>';
             
-                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td><tr>';
+       echo '<tr><td><a href="http://www.' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
                 }
                     ?>
                      <tr>
@@ -328,7 +328,7 @@
                
                 while ($row= mysqli_fetch_assoc($query)){
             
-                 echo '<tr><td><a href="' .$row['link'] . '">' . $row['titel_link'] . ' </a></td></tr>';
+                       echo '<tr><td><a href="http://www.' .$row['link'] . '">' . $row['titel_link'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
@@ -344,7 +344,7 @@
                
                 while ($row= mysqli_fetch_assoc($query)){
             
-                 echo '<tr><td><a href="' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
+                echo '<tr><td><a href="http://www.' .$row['url_video'] . '">' . $row['titel_video'] . ' </a></td></tr>';
                 }
                     ?>
                      <tr>
