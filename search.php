@@ -1,3 +1,7 @@
+<?php include 'connect.inc.php';
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,8 +25,8 @@
         $k = $_GET['k'];
         $i = 0;
         $terms = explode(" ", $k);
-        $query = "SELECT * FROM html, jquery, php, psd, css WHERE tags = $k ";
-        
+        $query = "SELECT * FROM html, jquery, php, psd, css WHERE ";
+       
         foreach ($terms as $each) {
             $i++;
             if ($i == 1)
@@ -33,13 +37,13 @@
         
         // connect
         
-        mysql_connect("localhost", "root", "");
-        mysql_select_db("media_group2");
+        $query2 = mysqli_query($con, $query);
         
-        $query = mysql_query($query);
-        $numrows = mysql_num_rows($query);
+        echo $query;
+        $numrows = mysqli_num_rows($query2);
+        
         if ($numrows > 0) {
-            while ($row = mysql_fetch_assoc($query)) {
+            while ($row = mysqli_fetch_assoc($query2)) {
                 $id = $row['id'];
                 $tags = $row['tags'];
                 
