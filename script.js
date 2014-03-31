@@ -1,13 +1,19 @@
 $(document).ready(function(e) {
     //menubar//
 //menubar dicht houden door de functie hide//
+//hide= Verbergt een element. De input is dan wel hetzelfde als bij show()//
     $('#mainNav nav ul li ul').hide();
-//mouseenter=wanneer je er met d//
+    
+//mouseenter=de muis van de gebruiker over een bepaald element heen gaat//
+//show=Laat het verborgen element zien//
+//slidedown= is een functie die een element weergeeft doordat het dan naar beneden word geschoven//
     $('#mainNav nav ul li').mouseenter(function(){
 		$(this).children('ul').show();
         $(this).children('ul').stop(450).slideDown(50);
     });
-
+//mouseleave=de muis van de gebruiker uit een bepaald element gaat//
+//slideup= is een functie die een element verbergt doordat er dan naar boven word geschoven//
+//children=Dit zijn de “kinderen” van het element waar je op zit.//
     $('#mainNav nav ul li').mouseleave(function(){
         $(this).children('ul').stop(450).slideUp(300);
     });
@@ -20,6 +26,9 @@ $(document).ready(function(e) {
 //Voeg toe button//
 $(function() {
     $( "#dialog" ).dialog({
+//autopen is false, zodat die niet automatisch open gaat//
+//effect is toegevoegd met een explode//
+//duration is hoe land die erover duurt om het te sluiten of het openen//
       autoOpen: false,
       show: {
       effect: "explode",
@@ -31,7 +40,7 @@ $(function() {
       duration: 1000
       }
     });
- 
+ //als je op de button opener klikt. dan word de dailog geopent//
     $( "#opener" ).click(function() {
     $( "#dialog" ).dialog( "open" );
     });
