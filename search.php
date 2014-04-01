@@ -23,17 +23,30 @@
     
     <?php
         $k = $_GET['k'];
-        $i = 0;
-        $terms = explode(" ", $k);
-        $query = "SELECT * FROM html, jquery, php, psd, css WHERE ";
+        /*$i = 0;
+        $terms = explode(" ", $k);*/
+        $sql = "(SELECT id, tags, url_video, 'html' as type FROM html WHERE tags LIKE '%" . $k . "%') 
+    UNION
+    (SELECT id, tags, url_video, 'css' as type FROM css WHERE tags LIKE '%" . $k . "%')
+    UNION
+    (SELECT id, tags, url_video, 'psd' as type FROM psd WHERE tags LIKE '%" . $k . "%')
+    UNION
+    (SELECT id, tags, url_video, 'jquery' as type FROM jquery WHERE tags LIKE '%" . $k . "%')";
        
-        foreach ($terms as $each) {
-            $i++;
-            if ($i == 1)
-                $query .= "tags LIKE '%$each%' ";
-            else
-                $query .= "OR tags LIKE '%$each%' ";    
-        }
+       if ( !$query = mysqli_query($con, $sql) ) {
+           echo 'Kan zoekquery niet uitvoeren';
+           exit();
+       }
+       
+        echo '<h1> Zoekresultaten: </h1>';
+        while ($row = mysqli_fetch_assoc($query) ) 
+        {
+            echo '<a href="' . $row['url_video'] .  '">' . $row['tags'] . '</a>';
+            echo '<br>';
+        } 
+       
+       
+        
         
         // connect
         
