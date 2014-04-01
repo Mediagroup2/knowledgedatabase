@@ -9,5 +9,12 @@
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <!--    <link rel="stylesheet" href="/resources/demos/style.css">-->
 
-<head>  
- 
+</head> 
+  <body>
+  <img src="img/logo/tutorial5.png" alt="banner-radius">
+  <img src="img/logo/tutorial5.1.png" alt="banner-radius">
+    <img src="img/logo/tutorial5.2png" alt="banner-radius">
+  <img src="img/logo/tutorial5.3png" alt="banner-radius">
+  </body>
+  </html
+  

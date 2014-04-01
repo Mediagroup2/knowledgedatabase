@@ -14,13 +14,13 @@ include 'connect.inc.php';
            
 <input type="text" name="link" placeholder="url"><br>
 
-<<<<<<< HEAD
-<input type="text" name="titel_Tutorial" id="" placeholder="beschrijving"><br>
-=======
-<input type="text" name="titel_tutorial" id="" placeholder="titel_tutorial">
 
-<input type="text" name="url_tutorial" id="" placeholder="url_tutorial">
->>>>>>> Goeie tutorials toegevoegd
+<input type="text" name="titel_tutorial"  placeholder="beschrijving"><br>
+
+<input type="text" name="titel_tutorial" placeholder="titel_tutorial">
+
+<input type="text" name="url_tutorial"  placeholder="url_tutorial">
+
 
 <input type="text" name="titel_video" placeholder="insert titel_video"><br>
 

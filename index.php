@@ -307,7 +307,7 @@
                
                 while ($row= mysqli_fetch_assoc($query)){
             
-         echo '<tr><td><a href="' .$row['url_tutorial'] . '">' . $row['titel_tutorial'] . ' </a></td><tr>';
+  echo '<tr><td><a href="' .$row['url_tutorial'] . '">' . $row['titel_tutorial'] . ' </a></td><tr>';
                 }
                     ?>
                     <tr>
