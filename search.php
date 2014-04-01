@@ -1,7 +1,5 @@
 <?php include 'connect.inc.php';
-
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,10 +20,13 @@
     <hr />
     
     <?php
+        error_reporting(E_ALL ^ E_NOTICE);
         $k = $_GET['k'];
         /*$i = 0;
         $terms = explode(" ", $k);*/
         $sql = "(SELECT id, tags, url_video, 'html' as type FROM html WHERE tags LIKE '%" . $k . "%') 
+    UNION
+    (SELECT id, tags, url_video, 'css' as type FROM php WHERE tags LIKE '%" . $k . "%')
     UNION
     (SELECT id, tags, url_video, 'css' as type FROM css WHERE tags LIKE '%" . $k . "%')
     UNION
@@ -50,12 +51,11 @@
         
         // connect
         
-        $query2 = mysqli_query($con, $query);
-        
+        error_reporting(E_ALL ^ E_NOTICE);
         echo $query;
         $numrows = mysqli_num_rows($query2);
         
-        if ($numrows > 0) {
+        if ($numrows > 1) {
             while ($row = mysqli_fetch_assoc($query2)) {
                 $id = $row['id'];
                 $tags = $row['tags'];
@@ -66,9 +66,7 @@
         else {
             echo "No results found for \"<b>$k</b>\"";
         }
-        // disconnect
-        
-        
+        // disconnect  
     ?>
 </body>
 </html>
